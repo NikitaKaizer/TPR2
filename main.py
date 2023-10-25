@@ -119,7 +119,7 @@ def generate_elems(args):
     return elems_arr
 
 
-def check_all_algorithms(elems_arr, additional_info=""):
+def check_all(elems_arr, additional_info=""):
     if additional_info:
         print("\n", additional_info)
     line = Line()
@@ -158,15 +158,15 @@ def main():
     elems_arr_2row_sorted = sorted(elems_arr_2row, key=lambda x: x.weight, reverse=True)
     elems_arr_3row_sorted = sorted(elems_arr_3row, key=lambda x: x.weight, reverse=True)
 
-    check_all_algorithms(elems_arr_1row, "20 elements. 1 row Non-Sorted")
-    check_all_algorithms(elems_arr_2row, "20 elements. 2 row Non-Sorted")
-    check_all_algorithms(elems_arr_3row, "20 elements. 3 row Non-Sorted")
-    check_all_algorithms(elems_arr_60, "60 elements. Non-Sorted")
+    check_all(elems_arr_1row, "20 elements. 1 row Non-Sorted")
+    check_all(elems_arr_2row, "20 elements. 2 row Non-Sorted")
+    check_all(elems_arr_3row, "20 elements. 3 row Non-Sorted")
+    check_all(elems_arr_60, "60 elements. Non-Sorted")
 
-    check_all_algorithms(elems_arr_1row_sorted, "20 elements. 1 row Sorted")
-    check_all_algorithms(elems_arr_2row_sorted, "20 elements. 2 row Sorted")
-    check_all_algorithms(elems_arr_3row_sorted, "20 elements. 3 row Sorted")
-    check_all_algorithms(elems_arr_sorted_60, "60 elements. Sorted")
+    check_all(elems_arr_1row_sorted, "20 elements. 1 row Sorted")
+    check_all(elems_arr_2row_sorted, "20 elements. 2 row Sorted")
+    check_all(elems_arr_3row_sorted, "20 elements. 3 row Sorted")
+    check_all(elems_arr_sorted_60, "60 elements. Sorted")
 
 
 if __name__ == "__main__":
